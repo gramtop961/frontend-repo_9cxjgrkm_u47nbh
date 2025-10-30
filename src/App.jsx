@@ -1,28 +1,19 @@
-import { useState } from 'react'
+import Header from './components/Header';
+import HelloMessage from './components/HelloMessage';
+import InfoCards from './components/InfoCards';
+import Footer from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900 dark:from-slate-950 dark:to-slate-900 dark:text-slate-100">
+      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-200/40 via-fuchsia-200/20 to-rose-200/10 dark:from-indigo-900/30 dark:via-fuchsia-900/20 dark:to-rose-900/10" />
+
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 pb-10">
+        <Header />
+        <HelloMessage />
+        <InfoCards />
+        <Footer />
       </div>
     </div>
-  )
+  );
 }
-
-export default App
