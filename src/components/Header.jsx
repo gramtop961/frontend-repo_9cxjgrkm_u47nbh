@@ -5,7 +5,7 @@ export default function Header() {
     <header className="w-full py-6">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6">
         <div className="flex items-center gap-3">
-          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 via-rose-500 to-orange-500 text-white shadow">
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-indigo-500 to-cyan-500 text-white shadow">
             <Rocket className="h-6 w-6" />
           </span>
           <div>
